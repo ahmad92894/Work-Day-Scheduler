@@ -1,16 +1,16 @@
 $(function () {
-
+// setting the date and time in the format i wanted
 var current = dayjs("");
 var current = dayjs();
 $('#currentDay').text(current.format('MMM D YYYY hh:mm a'));
-
+// button that stes the info into storage
 $('.saveBtn').on  ('click', function(){
  var text= $(this).siblings(".description").val();
 var time=$(this).parent().attr("id");
 localStorage.setItem(time, text);
 })
 
-
+// creating the color changing by setting the blocktime to current time
 function exactTime(){
   var currentTime= dayjs().hour();
   $(".time-block").each(function(){
@@ -35,6 +35,7 @@ function exactTime(){
   } )
  
 }
+// creating the storage for each time block
 $("#hour-9 .description").val(localStorage.getItem("hour-9"));
 $("#hour-10 .description").val(localStorage.getItem("hour-10"));
 $("#hour-11 .description").val(localStorage.getItem("hour-11"));
