@@ -48,10 +48,10 @@ $(document).ready(function () {
 
 function exactTime() {
   var currentTime = dayjs().hour();
-  //console.log();
+  
   
   $(".time-block").each(function () {
-      var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+    var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
       if (blockTime < currentTime) {
           $(this).removeClass("future");
@@ -72,5 +72,6 @@ function exactTime() {
 
 
   })
-      exactTime();
+      
 }
+exactTime();
