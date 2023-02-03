@@ -51,7 +51,7 @@ function exactTime() {
   
   
   $(".time-block").each(function () {
-    var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+    var blockTime = parseInt($(this).attr("id").split("hour")[2]);
 
       if (blockTime < currentTime) {
           $(this).removeClass("future");
