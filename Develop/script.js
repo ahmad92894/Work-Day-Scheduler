@@ -7,6 +7,17 @@ var current = dayjs();
 $('#currentDay').text(current.format('MMM D YYYY hh:mm a'));
 
 
+// $( document.body ).click(function() {
+//   $( "data-hour" ).each(function( i ) {
+//     if ( this.style.color !== "blue" ) {
+//       this.style.color = "blue";
+//     } else {
+//       this.style.color = "";
+//     }
+//   });
+// });
+
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
